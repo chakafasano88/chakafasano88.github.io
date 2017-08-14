@@ -1,0 +1,565 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+  cursor: auto;
+  font-family: "Noto Sans","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5;
+  margin-left: 10%;
+}
+
+.all-content-container {
+  width: 90%;
+}
+
+/* Header container unique uncommon goods logo */
+/*BLOCK 1*/
+.header {
+  text-align: center;
+  max-width: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-container-parent {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flex-child1 {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flex-child2 {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#view-in-browser {
+  color: rgb(44,106,138);
+  font-size: .3em;
+}
+
+#take-a-look {
+  font-size: .3em;
+}
+
+#company-logo {
+  width: 20%;
+}
+
+#show-links {
+  display: none;
+}
+
+/* flex container for nav bar element positioning */
+/*BLOCK 2*/
+.top-nav-flex{
+  max-width: inherit;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  border-bottom: 1px solid gray;
+  border-top: 1px solid gray;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/* Nav bar for mobile */
+.mobile-top-nav-flex {
+  display: none;
+}
+/* list of main nav bar links */
+li {
+  list-style: none;
+}
+/* removes bullets and adds color to link text */
+a:link {
+  text-decoration: none;
+}
+
+a {
+  color: #817B73;
+}
+/* main container for tagline, button, and reminder to purchase */
+/*BLOCK 3*/
+.main-content-container {
+  max-width: inherit;
+  padding: 35px;
+  margin-bottom: 10px;
+  text-align: center;
+  height: 350px;
+  background-color: rgb(245,245,242);
+  margin-top: 10px;
+}
+
+.text-container {
+  position: relative;
+  top: 15%;
+}
+
+/* Access font file .otf */
+@font-face {
+    font-family: 'Prumo Banner Light';
+    src: url("font/Prumo Banner Light.otf") format("opentype");
+}
+
+h1 {
+  color: rgb(44,106,138);
+  font-family: 'Prumo Banner Light';
+  font-size: 3.2em;
+}
+
+/* Styling for reminder text */
+#reminder-text{
+  width: 25%;
+  margin-left: 37%;
+  color: #817B73;
+  font-size: .9em;
+}
+/* make last few words starting with "before" black and bold */
+#reminder-black{
+  font-weight: bold;
+  color: black;
+}
+/* flex container for reminder */
+.reminder-text-flex{
+  display: flex;
+  justify-content: center;
+}
+/* THE BUTTON! */
+button{
+  background-color: rgb(44,106,138);
+  border: rgb(44,106,138);
+  border-radius: 2px;
+  width: 25%;
+  padding: 10px;
+  margin-top: 28px;
+  font-size: 1.2em;
+  font-family: cursive;
+  color: white;
+}
+
+button:focus {
+  outline:none;
+}
+
+button:active {
+  box-shadow: 0 1px #666;
+  transform: translateY(1px);
+}
+
+/* Image blocks flex container */
+/*BLOCK 5*/
+.three-blocks-flex{
+  max-width: 100%;
+  width: auto;
+  height: 195px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 120px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+.block-1 {
+  width: 320px;
+  height: auto;
+  height: 300px;
+  background-image: url('images/image1.png');
+  background-size: cover;
+  margin: 0px 5px 0px 0px;
+}
+
+.block-2 {
+  width: 320px;
+  height: auto;
+  height: 300px;
+  background-image: url('images/image2.png');
+  background-size: cover;
+}
+
+
+.block-3 {
+  width: 30%;
+  height: auto;
+  height: 300px;
+  background-image: url('images/image3.png');
+  background-size: cover;
+}
+
+/*BLOCK 6*/
+.bottom-nav-container {
+  max-width: inherit;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid gray;
+  padding-bottom: 12px;
+  padding-top: 5px;
+
+}
+
+a.bottom-nav-flex {
+  font-size: 40px;
+}
+
+.bottom-nav-flex {
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 66%;
+  font-size: .9em;
+  margin-left: 1%;
+}
+
+#nav-dividers {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#mobile-nav-dividers {
+  display: none;
+}
+
+.show-hide-bottom-links-container {
+  display: none;
+}
+
+.icon-flex {
+  width: 20%;
+  margin-left: 7%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+i {
+  color: white;
+}
+
+.fa {
+  position: relative;
+  bottom: 10px;
+  left: 3.5px;
+}
+
+.icon-style {
+  border-radius: 20px;
+  background-color: rgb(44,106,138);
+  border: rgb(44,106,138);
+  border-radius: 25px;
+  padding: 8px 17px 21px 11px;
+  height: 2px;
+  width: 3px;
+  font-size: 23px;
+  margin-left: 15px;
+  display: flex;
+  justify-content: center;
+}
+/*BLOCK 7*/
+.footer-container {
+  width: inherit;
+  padding: 17px 0px 20px 40px;
+  font-size: .7em;
+}
+
+a#footer-links-underline {
+  text-decoration: underline;
+
+}
+
+@media only screen and (max-width : 480px) {
+
+  .all-content-container {
+
+  }
+
+  .header {
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+    box-shadow: 1px 1px 1px grey;
+
+  }
+
+  .flex-container-parent {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5%;
+    background-color: white;
+  }
+
+  .flex-child1 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+
+  }
+
+  .flex-child2 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #company-logo {
+    width: 60%;
+  }
+
+  .main-content-container {
+    max-width: 64%;
+    max-height: 100px;
+    box-shadow: 1px 1px 1px grey;
+    margin-left: 10%;
+    margin-right: 10%;
+
+
+  }
+
+  .text-container {
+    position: relative;
+    top: 0px;
+  }
+
+  .top-nav-flex {
+    display: none;
+  }
+
+
+  h1 {
+    color: rgb(44,106,138);
+    font-family: 'Prumo Banner Light';
+    font-size: 1.1em;
+    width: 100%;
+  }
+
+  /* Styling for reminder text */
+  #reminder-text{
+    width: 95%;
+    margin-left: 3%;
+    margin-top: 5%;
+    color: #817B73;
+    font-size: .3em;
+  }
+  /* make last few words starting with "before" black and bold */
+  #reminder-black{
+    font-weight: bold;
+    color: black;
+  }
+  /*flex container for reminder */
+  .reminder-text-flex{
+    display: flex;
+    justify-content: center;
+  }
+  /* THE BUTTON! */
+  button{
+    background-color: rgb(44,106,138);
+    border: rgb(44,106,138);
+    border-radius: 2px;
+    width: 70%;
+    padding: 5px;
+    margin-top: 20px;
+    font-size: .8em;
+    font-family: cursive;
+    color: white;
+  }
+
+  button:focus {
+    outline:none;
+  }
+
+  button:active {
+    box-shadow: 0 1px #666;
+    transform: translateY(1px);
+  }
+
+  .mobile-top-nav-flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 80%;
+    margin-left: 10%;
+    box-shadow: 1px 1px 1px grey;
+  }
+
+  .underline {
+    border-bottom: .7px solid rgb(217,217,217);
+    width: 90%;
+    padding: 5px 5px 5px 6px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #817B73;
+  }
+
+  .three-blocks-flex{
+    width: 80%;
+    margin-left: 10%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+    box-shadow: 1px 1px 1px grey;
+  }
+
+  .block-1 {
+    width: 85%;
+    height: auto;
+    height: 300px;
+    background-image: url('images/image1.png');
+    background-size: cover ;
+    margin-bottom: 5%;
+  }
+
+  .block-2 {
+    width: 85%;
+    height: auto;
+    height: 300px;
+    background-image: url('images/image2.png');
+    background-size: cover;
+    margin-bottom: 5%;
+
+  }
+
+
+  .block-3 {
+    width: 85%;
+    height: auto;
+    height: 300px;
+    background-image: url('images/image3.png');
+    background-size: cover;
+  }
+
+  .bottom-nav-container {
+    margin-left: 10%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid gray;
+    box-shadow: 1px 1px 1px grey;
+    padding-bottom: 15px;
+
+  }
+
+  .bottom-nav-flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 90%;
+    font-size: .8em;
+  }
+
+  .show-hide-bottom-links-container1 {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    font-size: .8em;
+    padding-bottom: 10px;
+  }
+
+  .show-hide-bottom-links-container2 {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    font-size: .8em;
+    padding-bottom: 5px;
+  }
+
+  #show-links {
+    display: block;
+    margin-right: 2%;
+    margin-left: 2%;
+
+  }
+
+  #hide-links {
+    display: none;
+  }
+
+  #nav-dividers {
+    display: none;
+  }
+
+  #mobile-nav-dividers {
+    margin-left: 2px;
+    margin-right: 2px;
+
+  }
+
+  .icon-flex {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    margin-right: 13%;
+  }
+
+  .footer-container {
+    width: 77%;
+    font-size: .3em;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    margin-right: 10%;
+    box-shadow: 1px 1px 1px grey;
+
+  }
+
+  .footer-container a:link {
+    text-decoration: underline;
+  }
+
+  .all-content-container{
+    margin-bottom: 10%;
+
+  }
+
+  #nav-dividers {
+
+  }
+
+}
+
+
+@media only screen
+  and (min-width: 768px)
+  and (max-width : 1024px) {
+  body {
+    background-color: red;
+
+  }
+
+}
