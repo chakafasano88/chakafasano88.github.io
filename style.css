@@ -300,13 +300,14 @@ a#footer-links-underline {
   and (max-width : 480px) {
 
   .all-content-container {
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-
+/* BLOCK 1 */
   .header {
     text-align: center;
     width: 80%;
-    margin-left: 10%;
     box-shadow: 1px 1px 1px grey;
 
   }
@@ -336,15 +337,11 @@ a#footer-links-underline {
   #company-logo {
     width: 60%;
   }
-
+/* BLOCK 2 */
   .main-content-container {
-    max-width: 64%;
+    max-width: 58%;
     max-height: 100px;
     box-shadow: 1px 1px 1px grey;
-    margin-left: 10%;
-    margin-right: 10%;
-
-
   }
 
   .text-container {
@@ -403,7 +400,7 @@ a#footer-links-underline {
     box-shadow: 0 1px #666;
     transform: translateY(1px);
   }
-
+/* BLOCK 3 */
   .mobile-top-nav-flex {
     display: flex;
     align-items: center;
@@ -413,8 +410,8 @@ a#footer-links-underline {
     padding-top: 5px;
     padding-bottom: 5px;
     width: 80%;
-    margin-left: 10%;
     box-shadow: 1px 1px 1px grey;
+    margin-bottom: 3%;
   }
 
   .underline {
@@ -427,10 +424,9 @@ a#footer-links-underline {
     text-decoration: none;
     color: #817B73;
   }
-
+/* BLOCK 4 */
   .three-blocks-flex{
     width: 80%;
-    margin-left: 10%;
     height: 700px;
     display: flex;
     align-items: center;
@@ -438,6 +434,7 @@ a#footer-links-underline {
     justify-content: space-between;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-bottom: 3%;
     border-bottom: 1px solid gray;
     box-shadow: 1px 1px 1px grey;
   }
@@ -469,17 +466,15 @@ a#footer-links-underline {
     background-image: url('images/image3.png');
     background-size: cover;
   }
-
+/* BLOCK 5 */
   .bottom-nav-container {
-    margin-left: 10%;
     width: 80%;
     display: flex;
     align-items: center;
     flex-direction: column;
     border-bottom: 1px solid gray;
     box-shadow: 1px 1px 1px grey;
-    padding-bottom: 15px;
-
+    margin-bottom: 3%;
   }
 
   .bottom-nav-flex {
@@ -492,8 +487,9 @@ a#footer-links-underline {
     font-size: .8em;
   }
 
+/* BLOCK 6 */
   .show-hide-bottom-links-container1 {
-    width: 95%;
+    width: 90%;
     display: flex;
     justify-content: center;
     font-size: .8em;
@@ -539,31 +535,26 @@ a#footer-links-underline {
     color: white;
     margin-right: 13%;
   }
-
+/* BLOCK 7 */
   .footer-container {
-    width: 75.4%;
+    max-width: 65%;
     font-size: .3em;
     padding-bottom: 10px;
     padding-right: 10px;
-    margin-right: 13%;
     box-shadow: 1px 1px 1px grey;
-
   }
 
   .footer-text-container {
-    border: 1px solid red;
     margin-right: 5%;
-
   }
 
   .footer-container a:link {
     text-decoration: underline;
   }
 
-
-
   .all-content-container{
-    margin-bottom: 10%;
+    width: 90%;
+    padding-bottom: 20px;
 
   }
 
