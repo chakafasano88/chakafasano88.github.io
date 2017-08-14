@@ -286,7 +286,7 @@ a#footer-links-underline {
 }
 
 @media only screen
-  and (min-width: 320px)
+  /*and (min-width: 320px)*/
   and (max-width : 480px) {
 
   .all-content-container {
@@ -531,18 +531,26 @@ a#footer-links-underline {
   }
 
   .footer-container {
-    width: 77%;
+    width: 75.4%;
     font-size: .3em;
     padding-bottom: 10px;
     padding-right: 10px;
-    margin-right: 10%;
+    margin-right: 13%;
     box-shadow: 1px 1px 1px grey;
+
+  }
+
+  .footer-text-container {
+    border: 1px solid red;
+    margin-right: 5%;
 
   }
 
   .footer-container a:link {
     text-decoration: underline;
   }
+
+
 
   .all-content-container{
     margin-bottom: 10%;
