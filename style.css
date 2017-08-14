@@ -16,20 +16,19 @@ body {
   line-height: 1.5;
   margin-left: 10%;
 }
-
+/* Parent container for all content */
 .all-content-container {
   width: 90%;
 }
-
+/*======== BEGIN HEADER (BLOCK 1) ============*/
 /* Header container unique uncommon goods logo */
-/*BLOCK 1*/
 .header {
   text-align: center;
   max-width: inherit;
   display: flex;
   flex-direction: column;
 }
-
+/* Contains divs for "tale a look" and "view in browser" */
 .flex-container-parent {
   display: flex;
   justify-content: flex-start;
@@ -63,7 +62,9 @@ body {
 #show-links {
   display: none;
 }
+/* ====== END HEADER ======= */
 
+/* BEGIN NAV BAR (BLOCK 2) */
 /* flex container for nav bar element positioning */
 /*BLOCK 2*/
 .top-nav-flex{
@@ -92,8 +93,10 @@ a:link {
 a {
   color: #817B73;
 }
+/* END NAV BAR */
+
+/* ======== BEGIN MAIN CONTENT CONTAINER (BLOCK 3) ======== */
 /* main container for tagline, button, and reminder to purchase */
-/*BLOCK 3*/
 .main-content-container {
   max-width: inherit;
   padding: 35px;
@@ -159,9 +162,10 @@ button:active {
   box-shadow: 0 1px #666;
   transform: translateY(1px);
 }
+/* ======= END MAIN CONTENT CONTAINER  */
 
+/* ======= START IMAGES CONTAINER (BLOCK 4) ======= */
 /* Image blocks flex container */
-/*BLOCK 5*/
 .three-blocks-flex{
   max-width: 100%;
   width: auto;
@@ -200,8 +204,10 @@ button:active {
   background-image: url('images/image3.png');
   background-size: cover;
 }
+/* ======= END IMAGES CONTAINER (BLOCK 4) =======  */
 
-/*BLOCK 6*/
+
+/* ====== BEGIN BOTTOM NAV CONTAINER (BLOCK 5) ======== */
 .bottom-nav-container {
   max-width: inherit;
   display: flex;
@@ -273,7 +279,9 @@ i {
   display: flex;
   justify-content: center;
 }
-/*BLOCK 7*/
+/* ====== END BOTTOM NAV CONTAINER (BLOCK 5) ========  */
+
+/* ====== BEGIN FOOTER CONTAINER (BLOCK 6) ========  */
 .footer-container {
   width: inherit;
   padding: 17px 0px 20px 40px;
@@ -284,7 +292,9 @@ a#footer-links-underline {
   text-decoration: underline;
 
 }
+/* ====== END FOOTER CONTAINER (BLOCK 6) ========  */
 
+/* MOBILE PHONES  */
 @media only screen
   /*and (min-width: 320px)*/
   and (max-width : 480px) {
@@ -562,7 +572,7 @@ a#footer-links-underline {
   }
 
 }
-
+/* TABLETS IPHONES */
 @media only screen
   and (min-width: 768px)
   and (max-width : 1024px) {
