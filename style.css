@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    /*margin: 0;*/
     padding: 0;
     border: 0;
     outline: 0;
@@ -14,11 +14,12 @@ body {
   font-style: normal;
   font-weight: normal;
   line-height: 1.5;
-  margin-left: 10%;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 /* Parent container for all content */
 .all-content-container {
-  width: 90%;
+  width: 100%;
 }
 /*======== BEGIN HEADER (BLOCK 1) ============*/
 /* Header container unique uncommon goods logo */
@@ -64,9 +65,8 @@ body {
 }
 /* ====== END HEADER ======= */
 
-/* BEGIN NAV BAR (BLOCK 2) */
+/* ======== BEGIN NAV BAR (BLOCK 2) ======== */
 /* flex container for nav bar element positioning */
-/*BLOCK 2*/
 .top-nav-flex{
   max-width: inherit;
   display: flex;
@@ -107,9 +107,11 @@ a {
   margin-top: 10px;
 }
 
-.text-container {
+.main-content-text-container {
   position: relative;
-  top: 15%;
+  top: 8%;
+  border: 1px solid red;
+  padding: 5px 5px 5px 5px;
 }
 
 /* Access font file .otf */
@@ -169,41 +171,46 @@ button:active {
 .three-blocks-flex{
   max-width: 100%;
   width: auto;
-  height: 195px;
+  height: 270px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   justify-content: space-between;
   padding-top: 10px;
   padding-bottom: 120px;
   border-top: 1px solid gray;
   border-bottom: 1px solid gray;
+
+}
+
+img {
+  /*width: inherit;
+  height: inherit;*/
 }
 
 .block-1 {
-  width: 320px;
-  height: auto;
-  height: 300px;
-  background-image: url('images/image1.png');
-  background-size: cover;
+  width: 400px;
+  height: 380px;
   margin: 0px 5px 0px 0px;
+  /*border: 1px solid red;*/
+  text-align: left;
 }
+
 
 .block-2 {
-  width: 320px;
-  height: auto;
-  height: 300px;
-  background-image: url('images/image2.png');
-  background-size: cover;
-}
+  width: 400px;
+  height: 380px;
+  margin-left: 28px;
+  /*border: 1px solid red;*/
 
+}
 
 .block-3 {
-  width: 30%;
-  height: auto;
-  height: 300px;
-  background-image: url('images/image3.png');
-  background-size: cover;
+  width: 400px;
+  height: 380px;
+  margin-left: 28px;
+  /*border: 1px solid red;*/
 }
+
 /* ======= END IMAGES CONTAINER (BLOCK 4) =======  */
 
 
@@ -226,10 +233,11 @@ a.bottom-nav-flex {
   display: flex;
   text-align: left;
   justify-content: space-between;
+  align-items: baseline;
   padding-top: 20px;
   padding-bottom: 20px;
-  width: 66%;
-  font-size: .9em;
+  width: 60%;
+  font-size: 0.9em;
   margin-left: 1%;
 }
 
@@ -247,8 +255,8 @@ a.bottom-nav-flex {
 }
 
 .icon-flex {
-  width: 20%;
-  margin-left: 7%;
+  width: 21.5%;
+  margin-left: 5%;
   display: flex;
   justify-content: center;
   justify-content: space-between;
@@ -262,22 +270,25 @@ i {
 
 .fa {
   position: relative;
-  bottom: 10px;
-  left: 3.5px;
+  bottom: 4px;
+  right: 5px;
 }
 
 .icon-style {
-  border-radius: 20px;
   background-color: rgb(44,106,138);
   border: rgb(44,106,138);
   border-radius: 25px;
-  padding: 8px 17px 21px 11px;
-  height: 2px;
-  width: 3px;
-  font-size: 23px;
-  margin-left: 15px;
-  display: flex;
-  justify-content: center;
+  padding: 11px 10px 20px 22px;
+  height: 15px;
+  width: 18px;
+  font-size: 22px;
+  margin-right: 40px;
+}
+
+.fa-instagram:before {
+  position: relative;
+  right: 3px;
+  font-size: 27px;
 }
 /* ====== END BOTTOM NAV CONTAINER (BLOCK 5) ========  */
 
@@ -296,277 +307,343 @@ a#footer-links-underline {
 
 /* MOBILE PHONES  */
 @media only screen
-  /*and (min-width: 320px)*/
-  and (max-width : 480px) {
+  and (min-width: 320px)
+  and (max-width : 640px) {
 
-  .all-content-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    .all-content-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid red;
+    }
+  /* BLOCK 1 */
+    .header {
+      text-align: center;
+      width: 80%;
+      box-shadow: 1px 1px 1px grey;
+
+    }
+
+    .flex-container-parent {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 5%;
+      background-color: white;
+    }
+
+    .flex-child1 {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 5%;
+
+    }
+
+    .flex-child2 {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+    }
+
+    #company-logo {
+      width: 60%;
+    }
+  /* BLOCK 2 */
+    .main-content-container {
+      width: 78%;
+      height: 100%;
+      box-shadow: 1px 1px 1px grey;
+      padding: 5px 5px 5px 5px;
+    }
+
+    .main-content-container{
+      position: relative;
+      top: 0px;
+    }
+
+    .top-nav-flex {
+      display: none;
+    }
+
+
+    h1 {
+      color: rgb(44,106,138);
+      font-family: 'Prumo Banner Light';
+      font-size: 1.1em;
+      width: 100%;
+    }
+
+    /* Styling for reminder text */
+    #reminder-text{
+      width: 95%;
+      margin-left: 3%;
+      margin-top: 5%;
+      color: #817B73;
+      font-size: .3em;
+    }
+    /* make last few words starting with "before" black and bold */
+    #reminder-black{
+      font-weight: bold;
+      color: black;
+    }
+    /*flex container for reminder */
+    .reminder-text-flex{
+      display: flex;
+      justify-content: center;
+    }
+    /* THE BUTTON! */
+    button{
+      background-color: rgb(44,106,138);
+      border: rgb(44,106,138);
+      border-radius: 2px;
+      width: 70%;
+      padding: 5px;
+      margin-top: 20px;
+      font-size: .8em;
+      font-family: cursive;
+      color: white;
+    }
+
+    button:focus {
+      outline:none;
+    }
+
+    button:active {
+      box-shadow: 0 1px #666;
+      transform: translateY(1px);
+    }
+  /* BLOCK 3 */
+    .mobile-top-nav-flex {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      border-bottom: 1px solid gray;
+      border-top: 1px solid gray;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      width: 80%;
+      box-shadow: 1px 1px 1px grey;
+      margin-bottom: 3%;
+    }
+
+    .underline {
+      border-bottom: .7px solid rgb(217,217,217);
+      width: 90%;
+      padding: 5px 5px 5px 6px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #817B73;
+    }
+  /* BLOCK 4 */
+    .three-blocks-flex{
+      width: 80%;
+      height: 700px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px 1px 10px 1px;
+      border: 1px solid red;
+      margin-bottom: 3%;
+      border-bottom: 1px solid gray;
+      box-shadow: 1px 1px 1px grey;
+    }
+
+    .block-1 {
+      width: 190px;
+      width: auto;
+      height: auto;
+      height: 230px;
+      border: 1px solid red;
+      text-align: left;
+    }
+
+    .block-2 {
+      width: 230px;
+      width: auto;
+      height: auto;
+      height: 220px;
+      border: 1px solid red;
+
+    }
+
+    .block-3 {
+      width: 210px;
+      width: auto;
+      height: auto;
+      height: 220px;
+      border: 1px solid red;
+    }
+  /* BLOCK 5 */
+    .bottom-nav-container {
+      width: 80%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      border-bottom: 1px solid gray;
+      box-shadow: 1px 1px 1px grey;
+      margin-bottom: 3%;
+    }
+
+    .bottom-nav-flex {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      width: 90%;
+      font-size: .8em;
+    }
+
+  /* BLOCK 6 */
+    .show-hide-bottom-links-container1 {
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      font-size: .8em;
+      padding-bottom: 10px;
+    }
+
+    .show-hide-bottom-links-container2 {
+      width: 95%;
+      display: flex;
+      justify-content: center;
+      font-size: .8em;
+      padding-bottom: 5px;
+    }
+
+    #show-links {
+      display: block;
+      margin-right: 2%;
+      margin-left: 2%;
+
+    }
+
+    #hide-links {
+      display: none;
+    }
+
+    #nav-dividers {
+      display: none;
+    }
+
+    #mobile-nav-dividers {
+      margin-left: 2px;
+      margin-right: 2px;
+
+    }
+
+    .icon-flex {
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 20px;
+      color: white;
+      margin-right: 13%;
+    }
+  /* BLOCK 7 */
+    .footer-container {
+      max-width: 78%;
+      font-size: .3em;
+      padding-bottom: 10px;
+      padding-right: 5px;
+      box-shadow: 1px 1px 1px grey;
+      padding: 5px 5px 5px 5px;
+      border: 1px solid red;
+    }
+
+    .footer-text-container {
+      margin-right: 10%;
+    }
+
+    .footer-container a:link {
+      text-decoration: underline;
+    }
+
+    .all-content-container{
+      width: 90%;
+      padding-bottom: 20px;
+
+    }
+
   }
-/* BLOCK 1 */
-  .header {
-    text-align: center;
-    width: 80%;
-    box-shadow: 1px 1px 1px grey;
-
-  }
-
-  .flex-container-parent {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 5%;
-    background-color: white;
-  }
-
-  .flex-child1 {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5%;
-
-  }
-
-  .flex-child2 {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-  }
-
-  #company-logo {
-    width: 60%;
-  }
-/* BLOCK 2 */
-  .main-content-container {
-    max-width: 58%;
-    max-height: 100px;
-    box-shadow: 1px 1px 1px grey;
-  }
-
-  .text-container {
-    position: relative;
-    top: 0px;
-  }
-
-  .top-nav-flex {
-    display: none;
-  }
 
 
-  h1 {
-    color: rgb(44,106,138);
-    font-family: 'Prumo Banner Light';
-    font-size: 1.1em;
-    width: 100%;
-  }
-
-  /* Styling for reminder text */
-  #reminder-text{
-    width: 95%;
-    margin-left: 3%;
-    margin-top: 5%;
-    color: #817B73;
-    font-size: .3em;
-  }
-  /* make last few words starting with "before" black and bold */
-  #reminder-black{
-    font-weight: bold;
-    color: black;
-  }
-  /*flex container for reminder */
-  .reminder-text-flex{
-    display: flex;
-    justify-content: center;
-  }
-  /* THE BUTTON! */
-  button{
-    background-color: rgb(44,106,138);
-    border: rgb(44,106,138);
-    border-radius: 2px;
-    width: 70%;
-    padding: 5px;
-    margin-top: 20px;
-    font-size: .8em;
-    font-family: cursive;
-    color: white;
-  }
-
-  button:focus {
-    outline:none;
-  }
-
-  button:active {
-    box-shadow: 0 1px #666;
-    transform: translateY(1px);
-  }
-/* BLOCK 3 */
-  .mobile-top-nav-flex {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    border-bottom: 1px solid gray;
-    border-top: 1px solid gray;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    width: 80%;
-    box-shadow: 1px 1px 1px grey;
-    margin-bottom: 3%;
-  }
-
-  .underline {
-    border-bottom: .7px solid rgb(217,217,217);
-    width: 90%;
-    padding: 5px 5px 5px 6px;
-  }
-
-  a {
-    text-decoration: none;
-    color: #817B73;
-  }
-/* BLOCK 4 */
-  .three-blocks-flex{
-    width: 80%;
-    height: 700px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 3%;
-    border-bottom: 1px solid gray;
-    box-shadow: 1px 1px 1px grey;
-  }
-
-  .block-1 {
-    width: 85%;
-    height: auto;
-    height: 300px;
-    background-image: url('images/image1.png');
-    background-size: cover ;
-    margin-bottom: 5%;
-  }
-
-  .block-2 {
-    width: 85%;
-    height: auto;
-    height: 300px;
-    background-image: url('images/image2.png');
-    background-size: cover;
-    margin-bottom: 5%;
-
-  }
-
-
-  .block-3 {
-    width: 85%;
-    height: auto;
-    height: 300px;
-    background-image: url('images/image3.png');
-    background-size: cover;
-  }
-/* BLOCK 5 */
-  .bottom-nav-container {
-    width: 80%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    border-bottom: 1px solid gray;
-    box-shadow: 1px 1px 1px grey;
-    margin-bottom: 3%;
-  }
-
-  .bottom-nav-flex {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 90%;
-    font-size: .8em;
-  }
-
-/* BLOCK 6 */
-  .show-hide-bottom-links-container1 {
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    font-size: .8em;
-    padding-bottom: 10px;
-  }
-
-  .show-hide-bottom-links-container2 {
-    width: 95%;
-    display: flex;
-    justify-content: center;
-    font-size: .8em;
-    padding-bottom: 5px;
-  }
-
-  #show-links {
-    display: block;
-    margin-right: 2%;
-    margin-left: 2%;
-
-  }
-
-  #hide-links {
-    display: none;
-  }
-
-  #nav-dividers {
-    display: none;
-  }
-
-  #mobile-nav-dividers {
-    margin-left: 2px;
-    margin-right: 2px;
-
-  }
-
-  .icon-flex {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 20px;
-    color: white;
-    margin-right: 13%;
-  }
-/* BLOCK 7 */
-  .footer-container {
-    max-width: 65%;
-    font-size: .3em;
-    padding-bottom: 10px;
-    padding-right: 10px;
-    box-shadow: 1px 1px 1px grey;
-  }
-
-  .footer-text-container {
-    margin-right: 5%;
-  }
-
-  .footer-container a:link {
-    text-decoration: underline;
-  }
-
-  .all-content-container{
-    width: 90%;
-    padding-bottom: 20px;
-
-  }
-
-  #nav-dividers {
-
-  }
-
-}
-/* TABLETS IPHONES */
+/* TABLETS IPADS */
 @media only screen
-  and (min-width: 768px)
+  and (min-width: 641px)
   and (max-width : 1024px) {
+
+    .main-content-container {
+      max-width: inherit;
+      padding: 35px;
+      margin-bottom: 10px;
+      text-align: center;
+      height: 350px;
+      background-color: rgb(245,245,242);
+      margin-top: 10px;
+    }
+
+    .main-content-text-container {
+      position: relative;
+      top: 15%;
+      border: 1px solid red;
+      padding: 5px 5px 5px 5px;
+      position: relative;
+      top: 0px;
+    }
+
+    h1 {
+      color: rgb(44,106,138);
+      font-family: 'Prumo Banner Light';
+      font-size: 1.1em;
+      width: 100%;
+    }
+
+    /* Styling for reminder text */
+    #reminder-text{
+      width: 95%;
+      margin-left: 3%;
+      margin-top: 5%;
+      color: #817B73;
+      font-size: .3em;
+    }
+    /* make last few words starting with "before" black and bold */
+    #reminder-black{
+      font-weight: bold;
+      color: black;
+    }
+    /*flex container for reminder */
+    .reminder-text-flex{
+      display: flex;
+      justify-content: center;
+    }
+    /* THE BUTTON! */
+    button{
+      background-color: rgb(44,106,138);
+      border: rgb(44,106,138);
+      border-radius: 2px;
+      width: 70%;
+      padding: 5px;
+      margin-top: 20px;
+      font-size: .8em;
+      font-family: cursive;
+      color: white;
+    }
+
+    button:focus {
+      outline:none;
+    }
+
+    button:active {
+      box-shadow: 0 1px #666;
+      transform: translateY(1px);
+    }
 
 
 }
