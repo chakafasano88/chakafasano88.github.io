@@ -361,9 +361,8 @@ a#footer-links-underline {
       padding: 5px 5px 5px 5px;
     }
 
-    .main-content-container{
-      position: relative;
-      top: 0px;
+    .main-content-text-container{
+      text-align: center;
     }
 
     .top-nav-flex {
@@ -374,17 +373,18 @@ a#footer-links-underline {
     h1 {
       color: rgb(44,106,138);
       font-family: 'Prumo Banner Light';
-      font-size: 1.1em;
+      font-size: 1.7em;
       width: 100%;
     }
 
     /* Styling for reminder text */
     #reminder-text{
-      width: 95%;
-      margin-left: 3%;
+      width: 68%;
+      margin-left: 15%;
+      margin-right: 15%;
       margin-top: 5%;
       color: #817B73;
-      font-size: .3em;
+      font-size: .7em;
     }
     /* make last few words starting with "before" black and bold */
     #reminder-black{
@@ -443,16 +443,16 @@ a#footer-links-underline {
     }
     /* Image blocks flex container */
     .three-blocks-flex{
-      max-width: 100%;
       width: 80%;
-      display: inline-block;
+      display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: space-between;
-      padding: 10px 0px 10px 0px;
-      border-top: 1px solid gray;
-      border-bottom: 1px solid gray;
       border: 1px solid red;
-      height: 700px;
+    }
+
+    .three-blocks-flex2 {
+      border: 1px solid red;
+
     }
 
     img {
@@ -462,24 +462,27 @@ a#footer-links-underline {
 
     .block-1 {
       max-width: inherit;
-      width: 100%;
-      max-height: 100%;
+      width: 80%;
       border: 1px solid red;
+      text-align: center;
+      margin: auto;
     }
-
 
     .block-2 {
       max-width: inherit;
-      width: 100%;
-      max-height: 100%;
+      width: 80%;
       border: 1px solid red;
+      text-align: center;
+      margin: auto;
     }
 
     .block-3 {
       max-width: inherit;
-      width: 100%;
-      max-height: 100%;
+      width: 80%;
       border: 1px solid red;
+      text-align: center;
+      margin: auto;
+
     }
   /* BLOCK 5 */
     .bottom-nav-container {

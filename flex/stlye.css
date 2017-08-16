@@ -1,0 +1,14 @@
+.flexy {
+  width: 100%;
+  height: 300px;
+  border: 1px solid blue;
+  display: inline-block;
+
+}
+
+.block {
+  border: 1px solid red;
+  width: 80%;
+  height: 200px;
+
+}
