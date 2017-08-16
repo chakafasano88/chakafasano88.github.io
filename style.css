@@ -17,12 +17,14 @@ body {
   margin-left: 3%;
   margin-right: 3%;
 }
+
 /* Parent container for all content */
 .all-content-container {
   max-width: 100%;
   border: 1px solid red;
 }
 /*======== BEGIN HEADER (BLOCK 1) ============*/
+
 /* Header container unique uncommon goods logo */
 .header {
   text-align: center;
@@ -51,10 +53,12 @@ body {
 #view-in-browser {
   color: rgb(44,106,138);
   font-size: .3em;
+  font-size-adjust: 1;
 }
 
 #take-a-look {
   font-size: .3em;
+  font-size-adjust: 1;
 }
 
 #company-logo {
@@ -299,12 +303,16 @@ i {
 .footer-container {
   width: inherit;
   padding: 17px 0px 20px 40px;
-  font-size: .7em;
+  font-size: .8em;
 }
 
-a#footer-links-underline {
+.footer-container a:link {
   text-decoration: underline;
+}
 
+.footer-text {
+  color: #817B73;
+;
 }
 /* ====== END FOOTER CONTAINER (BLOCK 6) ========  */
 
@@ -312,6 +320,17 @@ a#footer-links-underline {
 @media only screen
   and (min-width: 320px)
   and (max-width : 680px) {
+
+    body {
+      cursor: auto;
+      font-family: "Noto Sans","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 1.5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
     .all-content-container {
       display: flex;
@@ -374,17 +393,19 @@ a#footer-links-underline {
       color: rgb(44,106,138);
       font-family: 'Prumo Banner Light';
       font-size: 1.7em;
+      font-size-adjust: 0.35;
       width: 100%;
     }
 
     /* Styling for reminder text */
     #reminder-text{
-      width: 68%;
+      width: 76%;
       margin-left: 15%;
       margin-right: 15%;
       margin-top: 5%;
       color: #817B73;
       font-size: .7em;
+      font-size-adjust: 0.45;
     }
     /* make last few words starting with "before" black and bold */
     #reminder-black{
@@ -419,6 +440,7 @@ a#footer-links-underline {
     }
   /* BLOCK 3 */
     .mobile-top-nav-flex {
+      width: 80%;
       display: flex;
       align-items: center;
       flex-direction: column;
@@ -426,7 +448,6 @@ a#footer-links-underline {
       border-top: 1px solid gray;
       padding-top: 5px;
       padding-bottom: 5px;
-      width: 80%;
       box-shadow: 1px 1px 1px grey;
       margin-bottom: 3%;
     }
@@ -442,12 +463,15 @@ a#footer-links-underline {
       color: #817B73;
     }
     /* Image blocks flex container */
+    /* BLOCK 4 */
     .three-blocks-flex{
       width: 80%;
       display: flex;
       flex-direction: column;
       align-items: center;
       border: 1px solid red;
+      box-shadow: 1px 1px 1px grey;
+      margin-bottom: 3%;
     }
 
     .three-blocks-flex2 {
@@ -502,18 +526,20 @@ a#footer-links-underline {
 
   /* BLOCK 6 */
     .show-hide-bottom-mobile-nav-container1{
-      width: 90%;
-      display: flex;
-      justify-content: center;
-      font-size: .8em;
-      padding-bottom: 10px;
-    }
-
-    .show-hide-bottom-mobile-nav-container2{
       width: 95%;
       display: flex;
       justify-content: center;
       font-size: .8em;
+      font-size-adjust: .43;
+      padding-bottom: 10px;
+    }
+
+    .show-hide-bottom-mobile-nav-container2{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      font-size: .8em;
+      font-size-adjust: .43;
       padding-bottom: 5px;
     }
 
@@ -533,15 +559,26 @@ a#footer-links-underline {
     }
 
     #mobile-nav-dividers {
+      display: block;
       margin-left: 2px;
       margin-right: 2px;
 
     }
 
+    .icon-flex {
+      width: 70%;
+      display: flex;
+      justify-content: center;
+      justify-content: space-between;
+      color: white;
+      border: 1px solid red;
+      margin: auto;
+    }
+
   /* BLOCK 7 */
     .footer-container {
       max-width: 78%;
-      font-size: .3em;
+      font-size: .4em;
       padding-bottom: 10px;
       padding-right: 5px;
       box-shadow: 1px 1px 1px grey;
@@ -551,16 +588,14 @@ a#footer-links-underline {
 
     .footer-text-container {
       margin-right: 10%;
-    }
+      font-size-adjust: .75;
+      font-family: "Noto Sans","Helvetica Neue";
 
-    .footer-container a:link {
-      text-decoration: underline;
     }
 
     .all-content-container{
       width: 90%;
       padding-bottom: 20px;
-
     }
 
   }
@@ -685,12 +720,15 @@ a#footer-links-underline {
     .bottom-tablet-nav-container2 {
       display: flex;
       justify-content: flex-start;
+      text-align: center;
       border: 1px solid red;
       width: 80%;
+      margin-left: 10%;
     }
 
     #show-links-tablet {
       display: block;
+      font-size: 1em;
     }
 
     #nav-dividers-tablet {
